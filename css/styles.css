@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  height: 8rem;
+  width: 100%;
+  background: rgb(200, 200, 200, .5);
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+}
+
+.twice-logo {
+  height: 6rem;
+  width: auto;
+  float: left;
+  margin: 1rem 1rem 1rem 100px;
+  cursor: pointer;
+}
+
+.nav-links {
+  height: auto;
+  width: auto;
+  float: right;
+  margin-right: 100px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  height: 6rem;
+  line-height: 6rem;
+  padding-left: 0;
+}
+
+.nav-links a {
+  color: #F190B7;
+  text-shadow: 2px 2px 0 #A63EC5;
+  font-size: 1.2rem;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2rem;
+  transition: ease .5s;
+}
+
+.nav-links li:hover a {
+  color: #FBD6D2;
+  transition: ease .5s;
+  text-shadow: 2px 2px 10px #A63EC5;
+}
+
+.nav-links li:hover::before  {
+  content: "🍭";
+  position: absolute;
+  transition: ease .5s;
+}
+
+.test {
+  height: 2100px;
+  background-color: powderblue;
+}
+
+.feels-vid {
+  filter: brightness(50%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: auto;
+}
