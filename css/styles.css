@@ -70,4 +70,5 @@ body {
   top: 0;
   z-index: -1;
   height: auto;
+  width: 100%;
 }
