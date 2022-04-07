@@ -162,7 +162,8 @@
 }
 
 .about-text-container {
-  height: 78%;
+  min-height: 78%;
+  height: auto;
   position: relative;
   float: right;
   background-color: #F1A59C;
