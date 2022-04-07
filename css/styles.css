@@ -271,6 +271,8 @@
     background: rgb(255,188,217,.5);
     background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(255,192,188,1) 100%);
     display: block;
+    margin: 0;
+    padding: 3% 0 0 3%;
   }
 
   .mid-text {
