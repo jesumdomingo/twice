@@ -3,29 +3,187 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Twice Fanmade Website</title>
   <link rel="icon" href="images/twice-icon.ico">
+
+  <!-- styles -->
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- bootstrap plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Montserrat:wght@400;900&family=Norican&display=swap" rel="stylesheet">
+  <title>Twice Fansite</title>
 </head>
 
 <body>
-  <div class="navigation">
-    <a href="#"><img class="twice-logo" src="images/twice-logo.png" alt="twiceLogo"></a>
-      <div class="nav-links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Albums</a></li>
-        </ul>
-      </div>
-  </div>
+  <section>
 
-<!---VIDEO HEADER--->
-<video autoplay muted loop class="feels-vid">
-  <source src="images/feels.mp4" type="video/mp4">
-</video>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img class="twice-logo-hidden" src="images/twice-logo.png" height="80px" alt="">
+        <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="first-nav navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-link-style">Profile</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-link-style">News</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-link-style">Sched</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-link-style">Discography</span></a></li>
+          </ul>
+          <img class="twice-logo navbar-brand" src="images/twice-logo2.png" alt="">
+          <ul class="second-nav navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-link-style">Special</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-link-style">Fans Club</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-link-style">Mobile</span></a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"><span class="nav-link-style">SocMed</span></a>
+              <ul class="dropdown-menu" style="background-color: transparent; border: 0;" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                <li><a class="dropdown-item" href="#">Instagtam</a></li>
+                <li><a class="dropdown-item" href="#">Twitter</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Video -->
+    <video autoplay muted loop class="video-twice">
+      <source src="images/feels.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- Middle Text -->
+    <div class="mid-text-container position-absolute bottom-0 start-50 translate-middle">
+      <h1 class="mid-text">TWICE JAPAN DEBUT 5th Anniversary</h1>
+      <h1 class="mid-text">『 T・W・I・C・E 』</h1>
+      <h1 class="mid-text">2022 . 5 . 25 (Wed) Release</h1>
+    </div>
+
+  </section>
+
+  <!-- Carrousel-Albums -->
+
+  <section id="albums">
+    <!-- <h1 class="album-head">TWICE ALBUMS</h1> -->
+    <div class="carousel-container">
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/twicebanner1.png" class="slider-img d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/twicebanner2.png" class="slider-img d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/twicebanner3.png" class="slider-img d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="news">
+    <h1 class="section-title">News and Announcements</h1>
+
+    <div class="list-group">
+      <!-- List Group 1 -->
+      <a data-bs-toggle="collapse" href="#news1" role="button" class="list-group-item list-group-item-action">
+        <span class="badge rounded-pill">NEWS</span>
+        <p>2022-04-06</p>
+        <span class="recent-news-text">New!</span><br>
+        <div class="news-headline">
+          <p>Celebration message to myself -JIHYO- 公開！</p>
+        </div>
+      </a>
+
+      <div class="collapse multi-collapse" id="news1">
+        <div class="news-container card card-body">
+          <p>TWICE JAPAN DEBUT 5th Anniversary『T・W・I・C・E』</p>
+          <p>2022.05.25 Release</p>
+          <p>Celebration message to myself</p>
+          <p> -JIHYO-</p>
+          <iframe class="news-video" src="https://www.youtube.com/embed/KmowbQrXy0o" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="list-group">
+
+        <!-- List Group 2 -->
+        <a data-bs-toggle="collapse" href="#news2" role="button" class="list-group-item list-group-item-action">
+          <span class="badge rounded-pill">What's New</span>
+          <p>2022-04-06</p>
+          <span class="recent-news-text">New!</span><br>
+          <div class="news-headline">
+            <p>Celebration message to myself -SANA- 公開！</p>
+          </div>
+        </a>
+
+        <div class="collapse multi-collapse" id="news2">
+          <div class="news-container card card-body">
+            <p>TWICE JAPAN DEBUT 5th Anniversary『T・W・I・C・E』</p>
+            <p>2022.05.25 Release</p>
+            <p>Celebration message to myself</p>
+            <p> -SANA-</p>
+            <iframe class="news-video" src="https://www.youtube.com/embed/QqIPba73f84" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- List Group 3 -->
+        <a data-bs-toggle="collapse" href="#news3" role="button" class="list-group-item list-group-item-action">
+          <span class="badge rounded-pill">NEWS</span>
+          <p>2022-04-06</p>
+          <span class="recent-news-text">New!</span><br>
+          <div class="news-headline">
+            <p>Celebration message to myself -MOMO- 公開！</p>
+          </div>
+        </a>
+
+        <div class="collapse multi-collapse" id="news3">
+          <div class="news-container card card-body">
+            <p>TWICE JAPAN DEBUT 5th Anniversary『T・W・I・C・E』</p>
+            <p>2022.05.25 Release</p>
+            <p>Celebration message to myself</p>
+            <p> -MOMO-</p>
+            <iframe class="news-video" src="https://www.youtube.com/embed/6VNZ3X0NPMQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+  </section>
+
+<!-- About Twice -->
+  <section id="about">
+    <div class="ph">
+      <img src="images/about1.jpg" alt="">
+      <br><br></div>
+      <div class="about-text-container">
+        <div class="about-text">
+          <h1 class="about-heading">About "Twice"</h1>
+          <hr class="heading-line" width="100px;">
+          <p>『いい音楽で一度、素晴らしいパフォーマンスで二度魅了させる』 </p>
+          <p>Twice is a nine-member girl group from Asia, who made their Japanese debut on June 28th, 2017, with their album『#TWICE』. </p>
+<br><p>They have caused something of a social phenomenon, boasting overwhelming popularity with a range of age groups and a core focused around those in their teens. They were also invited to perform on the Japanese end-of-year TV program, Kohaku Uta Gassen for three years running from their debut and have broken a number of records with musical releases.</p>
+
+<button class="member-profile">MEMBER PROFILE</button>
+        </div>
+      </div>
+
+  </section>
 
 </body>
 

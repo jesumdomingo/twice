@@ -1,74 +1,265 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
-.navigation {
-  height: 8rem;
-  width: 100%;
-  background: rgb(200, 200, 200, .5);
-  position: absolute;
-  display: inline-block;
-  z-index: 2;
+/* Navigation Section */
+
+.navbar {
+  font-family: 'Barlow';
+  font-weight: 200;
+  text-transform: uppercase;
 }
 
 .twice-logo {
   height: 6rem;
-  width: auto;
-  float: left;
-  margin: 1rem 1rem 1rem 100px;
-  cursor: pointer;
+  transition: ease .8s;
 }
 
-.nav-links {
-  height: auto;
-  width: auto;
-  float: right;
-  margin-right: 100px;
+.nav-link-style {
+  color: #FFF;
+  padding: 7px;
 }
 
-.nav-links ul {
-  display: flex;
-  list-style: none;
-  height: 6rem;
-  line-height: 6rem;
-  padding-left: 0;
-}
-
-.nav-links a {
+.nav-link-style:hover {
   color: #F190B7;
-  text-shadow: 2px 2px 0 #A63EC5;
-  font-size: 1.2rem;
-  font-family: "Comfortaa";
-  font-weight: bold;
-  text-decoration: none;
-  padding: 2rem;
-  transition: ease .5s;
+  transition: ease .3s;
 }
 
-.nav-links li:hover a {
-  color: #FBD6D2;
-  transition: ease .5s;
-  text-shadow: 2px 2px 10px #A63EC5;
+.twice-logo:hover {
+  transform: rotateY(360deg);
+  transition: ease .8s;
 }
 
-.nav-links li:hover::before  {
-  content: "🍭";
-  position: absolute;
-  transition: ease .5s;
+.twice-logo-hidden2 {
+  visibility: hidden;
 }
 
-.test {
-  height: 2100px;
-  background-color: powderblue;
+.first-nav {
+  margin-right: 18px;
 }
 
-.feels-vid {
-  filter: brightness(50%);
+.video-twice {
+  filter: brightness(70%);
   position: fixed;
   left: 0;
   top: 0;
   z-index: -1;
   height: auto;
   width: 100%;
+}
+
+.dropdown-item {
+  color: #FFF !important;
+  text-align: center !important;
+  margin: 10px 0;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(18,18,18,.3) !important;
+  color: #FBD6D2 !important;
+
+}
+
+/* Carrousel Content */
+#albums {
+  background-color: #F0F0F0;
+  position: relative;
+  margin-top: 45%;
+  z-index: 1;
+  padding: 2% 0;
+}
+
+.section-title {
+  text-align: center;
+  padding: 2%;
+  font-family: 'Norican';
+  font-size: 5rem;
+  color: #F2789F;
+}
+
+.carousel {
+  padding-bottom: 2%;
+}
+
+.carousel-item {
+  padding: 3% 0;
+}
+
+/* Middle Text */
+.mid-text-container {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Barlow';
+  width: fit-content;
+  background-color: rgb(20,20,20,0.3);
+  align-items: center;
+  padding: 0 50px;
+}
+
+.mid-text {
+  padding: 10px 0;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+/* News Section */
+#news {
+  background-color: #FFF;
+  height: auto;
+  padding: 3% 25% 10%;
+}
+
+.badge {
+  margin: 0 10px 0 5px;
+}
+
+.recent-news-text {
+  font-family: 'Norican';
+  color: #DB6B97;
+  margin-left: 10px;
+}
+
+.list-group p {
+  color: #889EAF;
+  display: inline;
+  font-family: 'Barlow';
+}
+
+.rounded-pill {
+  background-color: #DB6B97;
+}
+
+.news-headline {
+  margin: 20px 0;
+  display: block;
+}
+
+.news-video {
+  margin: auto;
+  width: 100%;
+  max-width: 80%;
+  min-height: 300px;
+}
+
+.news-container {
+  text-align: center;
+}
+
+/* About Twice */
+
+#about {
+  height: 900px;
+  background-color: #FFF;
+}
+
+.ph img {
+  width: 55%;
+  position: absolute;
+  z-index: 1;
+}
+
+.about-text-container {
+  height: 78%;
+  position: relative;
+  float: right;
+  background-color: #F1A59C;
+  width: 50%;
+  text-align: center;
+  z-index: 0;
+  padding: 6% 10%;
+  font-family: 'Barlow';
+  color: #FFF;
+}
+
+.about-heading {
+  font-size: 3rem;
+}
+
+.heading-line {
+  text-align: center;
+  margin: 15px auto;
+  border: 1px solid;
+}
+
+.about-text {
+  line-height: 1.5
+}
+
+.member-profile {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  font-family: 'Barlow';
+  color: #FFF;
+  font-size: .9rem;
+  margin-top: 1.5rem;
+}
+
+.member-profile:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgb(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgb(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+  transition: ease .5s;
+}
+
+/* Responsive Design */
+@media (min-width: 992px) {.twice-logo-hidden {display: none;}}
+@media (max-width: 991px) {
+  .twice-logo {
+    display: none;
+  }
+
+  .navbar, .navbar-expand-lg, .navbar-light {
+    padding: 0 !important;
+  }
+
+  .twice-logo-hidden {
+    transition: ease .8s;
+  }
+
+  .twice-logo-hidden:hover {
+    transform: rotateY(360deg);
+    transition: ease .8s;
+  }
+
+  .first-nav {
+    margin: 0;
+  }
+
+  .nav-item {
+    padding: 5px 0 0 0;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .nav-link-style {
+    color: #B24E7A;
+  }
+
+  .navbar-toggler {
+    border: 3px solid !important;
+    margin-right: 2%;
+  }
+
+  .video-twice {
+    position: relative;
+    display: block;
+  }
+
+  .container-fluid {
+    position: relative;
+    z-index: 2;
+    padding: 1% 0;
+    background: rgb(255,188,217,.5);
+    background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(255,192,188,1) 100%);
+  }
+
+  #albums {
+    position: relative;
+    margin-top: 0;
+  }
 }
