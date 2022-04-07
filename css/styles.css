@@ -67,7 +67,7 @@
   position: relative;
   margin-top: 45%;
   z-index: 1;
-  padding: 2% 0;
+  padding: 0;
 }
 
 .section-title {
@@ -76,14 +76,6 @@
   font-family: 'Norican';
   font-size: 3rem;
   color: #F2789F;
-}
-
-.carousel {
-  padding-bottom: 2%;
-}
-
-.carousel-item {
-  padding: 3% 0;
 }
 
 /* Middle Text */
