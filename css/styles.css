@@ -258,6 +258,10 @@
     background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(255,192,188,1) 100%);
   }
 
+  .mid-text-container {
+    display: none;
+  }
+
   #albums {
     position: relative;
     margin-top: 0;
