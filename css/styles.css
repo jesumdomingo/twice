@@ -320,4 +320,8 @@
     font-size: 2rem;
     margin: 5% 0;
   }
+
+  .list-group span, .list-group p {
+    font-size: 2rem;
+  }
 }
