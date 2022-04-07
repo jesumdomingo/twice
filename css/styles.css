@@ -248,6 +248,10 @@
     margin-right: 2%;
   }
 
+  .dropdown-item {
+    font-size: 1.5rem;
+  }
+
   .video-twice {
     position: relative;
     display: block;
@@ -262,12 +266,18 @@
   }
 
   .mid-text-container {
-    bottom: 30%;
+    position: relative;
     width: 100%;
+    background: rgb(255,188,217,.5);
+    background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(255,192,188,1) 100%);
+
   }
 
   .mid-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding: 0;
+    font-weight: bold;
+    color: #B24E7A;
   }
 
   #albums {
