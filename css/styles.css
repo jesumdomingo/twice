@@ -272,7 +272,7 @@
     background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(255,192,188,1) 100%);
     display: block;
     margin: 0;
-    padding: 3% 0 0 3%;
+    padding: 3% 0;
   }
 
   .mid-text {
@@ -285,6 +285,7 @@
   #albums {
     position: relative;
     margin-top: 0;
+    display: block;
   }
 
   #news {
