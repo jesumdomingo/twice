@@ -201,7 +201,7 @@
 
 .member-profile:hover {
   border: 1px solid;
-  box-shadow: inset 0 0 20px rgb(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  box-shadow: inset 0 0 20px rgb(255, 255, 255, .5), 0 0 20px rgb(255, 255, 255, .2);
   outline-color: rgb(255, 255, 255, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
@@ -270,7 +270,7 @@
     width: 100%;
     background: rgb(255,188,217,.5);
     background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(255,192,188,1) 100%);
-
+    display: block;
   }
 
   .mid-text {
