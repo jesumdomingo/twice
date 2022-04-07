@@ -74,7 +74,7 @@
   text-align: center;
   padding: 2%;
   font-family: 'Norican';
-  font-size: 4rem;
+  font-size: 3rem;
   color: #F2789F;
 }
 
@@ -200,12 +200,10 @@
 }
 
 .member-profile:hover {
-  border: 1px solid;
-  box-shadow: inset 0 0 20px rgb(255, 255, 255, .5), 0 0 20px rgb(255, 255, 255, .2);
-  outline-color: rgb(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #427388;
-  transition: ease .5s;
+  background-color: #FFF;
+  color: #F1A59C;
+  border: 1px solid #B24E7A;
+  transition: ease .3s;
 }
 
 /* Responsive Design */
@@ -268,8 +266,7 @@
   .mid-text-container {
     position: relative;
     width: 100%;
-    background: rgb(255,188,217,.5);
-    background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(255,192,188,1) 100%);
+    background-color: #F1A59C;
     display: block;
     margin: 0;
     padding: 3% 0;
@@ -278,8 +275,7 @@
   .mid-text {
     font-size: 2rem;
     padding: 0;
-    font-weight: bold;
-    color: #B24E7A;
+    color: #FFF;
   }
 
   #albums {
@@ -290,5 +286,38 @@
 
   #news {
     padding: 3% 5%;
+  }
+
+  .ph img {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+
+  .ph br {
+    display: none;
+  }
+
+  .about-text-container {
+    width: 100%;
+    padding: 7% 10%;
+    min-height: 0;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 2rem;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .about-heading {
+    font-size: 4rem;
+  }
+
+  .member-profile {
+    font-size: 2rem;
+    margin: 5% 0;
   }
 }
